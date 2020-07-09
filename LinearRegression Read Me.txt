@@ -1,0 +1,14 @@
+# LinearRegressionFromScratch
+made linear regression algorithm for bivariate data from scratch
+Linear regression is fitting a linear equation to a set of data
+In basic terms, this line passes through the mean(Xm, Ym) of the data
+----------------------------------------------------------------------------
+THE MATH: 
+a Linear equation is given by : y = mx + c -------- Eq 1
+here the slope of the line m can be given by : m = r * ((std dev of X)/(std dev of Y)) ---------Eq 2
+where, r is Correlation Coefficient : r = (1/(N+1)) * sum(((Xi - mean of X)/std dev of X)*((Yi - mean of Y)/std dev of Y)) , where N is the number of observations.
+so, substituting r in the equation Eq 2, we compute the slope of the line.
+Then we substitute m in the line equation Eq 1, along with (Xm, Ym) {mean of X, and Mean of Y} to compute 'c'
+finally we have the slope and the bias(constant) for the linear equation that fits our data.
+----------------------------------------------------------------------------
+Using the math above, and Python3 programming, we make a simple Linear Regression.
